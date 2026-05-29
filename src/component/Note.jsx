@@ -6,8 +6,8 @@ const Note = () => {
   const [content, setcontent] = useState([]);
 
   return (
-    <div className=" md:flex gap-30 justify-between">
-      <div className="md:w-125 shrink-0">
+    <div className=" lg:flex gap-30 justify-between">
+      <div className="lg:w-125 shrink-0">
         <h1 className="h1">
           Add note
         </h1>
@@ -47,16 +47,16 @@ const Note = () => {
         </form>
       </div>
 
-      <div className="md:border-l-amber-50 md:border mt-10 md:w-[60%] h-screen">
+      <div className="lg:border-l-amber-50 md:border mt-10 lg:mt-0 lg:w-[60%] min-h-screen">
         <h1 className="h1">
           See notes
         </h1>
-        <div className="flex gap-2 flex-wrap  lg:pl-10">
+        <div className="flex lg:gap-2 flex-wrap justify-center lg:justify-start lg:pl-10">
           {content.map((item, idx) => {
             return (
               <div
                 key={idx}
-                className='bg-[url("./img/note.png")] bg-cover bg-center min-h-90 w-80 pt-4 pl-16 pr-12 pb-3 relative'
+                className='bg-[url("./img/note.png")] bg-cover shrink-0 bg-center min-h-90 w-75 pt-4 pl-16 pr-12 pb-3 relative'
               >
                 <h1 className="font-semibold capitalize">{item.input}</h1>
                 <hr />
