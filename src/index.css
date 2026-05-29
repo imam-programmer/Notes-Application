@@ -2,3 +2,9 @@
 .button{
   @apply text-zinc-50 bg-[#333] py-3 rounded-2xl active:scale-[0.8] cursor-pointer hover:opacity-[0.5] transition
 }
+.input{
+  @apply text-amber-50 border p-3 rounded-[10px]
+}
+.textarea{
+  @apply text-amber-50 border pl-3 pb-5 pt-1 rounded-[10px]
+}
