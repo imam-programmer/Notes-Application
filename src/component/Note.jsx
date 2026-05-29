@@ -51,12 +51,12 @@ const Note = () => {
         <h1 className="h1">
           See notes
         </h1>
-        <div className="flex lg:gap-2 flex-wrap justify-center lg:justify-start lg:pl-10">
+        <div className="flex lg:gap-5 gap-2 flex-wrap justify-center lg:justify-start lg:pl-10">
           {content.map((item, idx) => {
             return (
               <div
                 key={idx}
-                className='bg-[url("./img/note.png")] bg-cover shrink-0 bg-center min-h-90 w-75 pt-4 pl-16 pr-12 pb-3 relative'
+                className='bg-[white] bg-cover shrink-0 rounded bg-center min-h-90 w-70 pt-4 pl-6 pr-6 pb-3 relative'
               >
                 <h1 className="font-semibold capitalize">{item.input}</h1>
                 <hr />
